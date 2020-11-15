@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(toolBar)
+
         fab.setOnClickListener { view ->
             Snackbar.make(view,"Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action",null).show()
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         return when(item.itemId){
-            R.id.nav_host_fragment-> true
+            R.id.action_settings-> true
             else -> super.onOptionsItemSelected(item)
         }
     }
