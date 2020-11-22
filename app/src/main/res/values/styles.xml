@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,6 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="HeadlineTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textSize">3.2mm</item>
+    </style>
+
+    <style name="DescroptionTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/amarante</item>
+        <item name="android:textSize">2.6mm</item>
     </style>
 
 </resources>
